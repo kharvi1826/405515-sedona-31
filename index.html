@@ -14,47 +14,51 @@
         <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
-    <img src="logo" width="138px" height="70px" alt="Логотип сайта Седона">
+    <a>
+    <img src="https://via.placeholder.com/138x70" width="138px" height="70px" alt="Логотип сайта Седона">
+    </a>
   </header>
   <main>
     <h1>Город Седона в Аризоне</h1>
-    <section>
-      <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
+    <div>
+      <p>Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    </section>
+    </div>
     <section>
+      <h2>Преимущества</h2>
+      <div>
       <h3>Настоящий<br>городок</h3>
       <p>— №1 —</p>
       <p>Седона — не аттракцион для туристов, там<br>
         течёт своя жизнь</p>
-      <img src="..." widht="800px" height="256px" alt="Вид гостиницы в Седоне">
-    </section>
-    <section>
+      <img src="https://via.placeholder.com/800x256" widht="800px" height="256px" alt="Вид гостиницы в Седоне">
+      </div>
+    <div>
       <ul>
        <li>
-         <img src="icon-1" width="74,69px" height="72px">
+         <img src="https://via.placeholder.com/74,69x72" width="74,69px" height="72px">
          <h3>Жильё</h3>
          <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
         </li>
         <li>
-          <img src="icon-3" width="74,07px" height="69,96px">
+          <img src="https://via.placeholder.com/74,07x69,96" width="74,07px" height="69,96px">
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
          </li>
         <li>
-          <img src="icon-2" width="64px" height="77px">
+          <img src="https://via.placeholder.com/64x77" width="64px" height="77px">
           <h3>Сувениры</h3>
           <p>Не только китайского, но и местного<br>производства!</p>
         </li>
       </ul>
-    </section>
-    <section>
+    </div>
+    <div>
       <h3>Там есть<br>Мост дьявола</h3>
       <p>— №2 —</p>
       <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
-      <img src="..." widht="800px" height="256px" alt="Вид на Мост дьявола">
-    </section>
-    <section>
+      <img src="https://via.placeholder.com/800x256" widht="800px" height="256px" alt="Вид на Мост дьявола">
+    </div>
+    <div>
       <ul>
         <li>
           <h3>небольшая<br>площадь</h3>
@@ -72,6 +76,7 @@
           <p>большинство едет в гранд каньон<br>и толпится там</p>
         </li>
       </ul>
+      </div>
     </section>
     <section>
       <h2>Поиск гостиницы</h2>
@@ -79,12 +84,23 @@
       <p>Укажите предполагаемые даты поездки,<br> 
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button type="button"><a href="#">ПОИСК ГОСТИНИЦЫ В седоне</a></button>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+         <label for="date-in">Дата заезда:</label>
+         <input id="date-in" type="date" name="date-in" value="24 апреля 2017">
+         <label for="date-out">Дата выезда:</label>
+         <input id="date-out" type="date" name="date-out" value="4 июля 2017">
+         <label for="adults">Взрослые:</label>
+         <input id="adults" type="number" name="adults" value="2">
+         <label for="kids">Дети:</label>
+         <input id="kids" type="number" name="kids" value="0">
+         </form>
+         <button type="button">Найти</button>
     </section>
   </main>
 <footer>
   <section>
     <h2>Контакты и карта</h2>
-    <img src="map" width="1199px" height="594px" alt="Карта штата">
+    <img src="https://via.placeholder.com/1199x594" width="1199px" height="594px" alt="Карта штата">
     <p>#visitSEDONA</p>
     <p>+7 800 555-86-28</p>
   </section>
