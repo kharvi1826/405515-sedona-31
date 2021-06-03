@@ -1,0 +1,147 @@
+/* Variables */
+
+:root {
+    --basic-grey: #888888;;
+    --basic-white: #ffffff;
+    --basic-dark: #000000;
+    --basic-light-brown: #766357;
+    --basic-blue: #81B3D2;
+    --basic-very-light-grey: #EEEEEE;
+    --basic-light-grey: #F2F2F2;
+    --special: #2a6ab3;
+  }
+/* Global */
+
+body {
+    min-width: 1200px;
+    margin: 0 auto;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--basic-dark);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+    background-image: url("img/background.jpg");/*я не знаю куда мне сейчас запихнуть это фонофое изображение*/
+  }
+  /* Main navigation */
+
+  .main-navigation {
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--basic-dark);
+      background-color: transparent; 
+  }
+  .site-navigation {
+      list-style: none;
+  }
+  .site-navigation-current a:not([href]) {
+    background-color: var(--basic-white);
+  }
+  .site-navigation a:hover,
+  .site-navigation a:focus {
+    background-color: var(--special);
+  }
+  /*Features*/
+
+  .features-list {
+    list-style: none;
+  }
+  .features-title {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+  }
+  .features-title p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .features-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;    
+  }
+  .features-content,
+  .features-item {
+    text-align: center;
+  }
+  .features-content {
+      background-color: var(--basic-blue);
+  }
+  .features-item-more {
+      background-color: var(--basic-very-light-grey);
+  }
+  .search-of-hotel h3 {
+      font-size: 30px;
+      line-height: 24px;
+      font-weight: 700;
+      text-align: center;
+  }
+  .search-of-hotel p {
+      text-align: center;
+  }
+  .button {
+    font-size: 21px;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-light-brown);
+  }
+  .button:hover,
+  .button:focus,
+  .button:active {
+    background-color: var(--special);
+  }
+  .booking-hotel {
+    font: inherit;
+    background-color: var(--basic-white);
+  }
+  .date-field input {
+    background-color: var(--basic-light-grey);
+  }
+  .quantity-of-persons {
+    background-color: var(--basic-light-grey);
+    text-align: center; 
+  }
+  .search-button {
+    background-color: var(--basic-blue);
+  }
+  .main-footer {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+  }
+  .footer-contacts a {
+    color: var(--basic-black);
+    text-decoration: underline;
+  }
+  .footer-contacts a:hover,
+  .footer-contacts a:focus {
+  text-decoration: none;
+  background-color: var(--basic-light-brown);
+  }
+  .footer-contacts p {
+      font-size: 21px;
+      font-weight: 700;
+  }
+  /* Social button */
+
+  .social-button {
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+  }
+  
+  .social-button:hover,
+  .social-button:focus {
+    background-color: var(--special);
+  }
+  
+  .footer-copyright {
+    font: inherit;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+  }
+
+
+
+  
