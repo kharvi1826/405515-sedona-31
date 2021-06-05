@@ -6,15 +6,15 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic;display=swap">
-  <link href="normalize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
 </head>
 
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
-      <ul class="site-navigation">
+      <ul>
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
         <li><a href="blank.html">Карта штата</a></li>
@@ -27,11 +27,14 @@
   </header>
   <main class="container">
     <h1>Приглашаем в велиолепную Седону, потому что Гранд Каньон отстой!</h1>
+    <div class="bg-photo">
+      <img src="img/background.jpg" width="1200" height="509" alt="Вид на каньон в Седоне">
+    </div>
     <section class="features">
       <h2>Преимущества</h2>
-      <div class="features-title">
-        <h3>Седона — небольшой городок в Аризоне,заслуживающий большего!</h3>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <div class="features-intro">
+        <p>Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
+        <p class="features-lead">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
 
       <ul class="features-list">
@@ -84,11 +87,10 @@
       </ul>
     </section>
     <section class="search-of-hotel">
-      <h2>Поиск гостиницы</h2>
-      <h3>Заинтересовались?</h3>
+      <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="button" type="button"><a href="#">ПОИСК ГОСТИНИЦЫ В седоне</a></button>
+      <button class="button search-button1" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
       <form class="booking-hotel" action="https://echo.htmlacademy.ru" method="POST">
         <label for="date-in">Дата заезда:</label>
         <input class="date-field" id="date-in" type="date" name="date-in" value="24 апреля 2017">
@@ -99,7 +101,7 @@
         <label for="kids">Дети:</label>
         <input class="quantity-of-persons" id="kids" type="number" name="kids" value="0">
       </form>
-      <button class="button search-button" type="submit">Найти</button>
+      <button class="button search-button2" type="submit">Найти</button>
     </section>
   </main>
   <footer class="main-footer">
@@ -129,8 +131,8 @@
       </div>
       <p class="footer-copyright">
         Website by
-        <a 
-        href="https://htmlacademy.ru">HTML Academy</a>
+        <a href="https://htmlacademy.ru"></a>
+        <img src="img/logo-htmlacademy.png" width="115" height="33" alt="Надпись HTML Academy">
       </p>
     </section>
   </footer>
