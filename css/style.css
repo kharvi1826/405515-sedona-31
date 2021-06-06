@@ -12,6 +12,7 @@
     --basic-dark-blue: #5496BD;
     --basic-very-light-grey: #EEEEEE;
     --basic-light-grey: #F2F2F2;
+    --basic-dark-grey: #BDBBBC;
   }
 /* Global */
 
@@ -154,6 +155,108 @@ body {
   .footer-copyright {
     font: inherit;
   }
+  .logo-htmlacademy:hover {
+   background-color: var(--basic-light-blue);
+  }
+  .logo-htmlacademy:focus {
+    background-color: var(--basic-dark-grey);
+   }
+  /*Catalog.html style*/
+
+  .filter-hotel {
+    min-height: 217px;
+    color: var(--basic-white);
+    background-color: var(--basic-light-blue);
+    background-image: url("../img/background-catalog.png");
+    background-repeat: no-repeat;
+  }
+  .form-filter-list {
+    list-style: none;
+  }
+  .form-filter-item {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+  .form-filter-item input[checkbox] {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .form-filter input[range] {
+    width: 316px;
+    height: 2px;
+  }
+  .show-button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  .show-button:hover {
+    color: var(--basic-dark);
+    background-color: var(--basic-white);
+  }
+  .found {
+    font-size: 21px;
+    font-weight: 700;
+  }
+  .sorted,
+  .results-list {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .sort-button {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--basic-dark);
+  }
+  .sort-button:hover {
+    color: var(--basic-light-blue);
+  }
+  .sort-button:focus {
+    color: var(--basic-dark);
+  }
+  .sort-button:active {
+    color: var(--basic-light-blue);
+  }
+  .results-list-item {
+    font-size: 21px;
+    font-weight: 700; 
+  }
+  .results-list-item p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  .results-details {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    background-color: var(--basic-light-blue);
+  }
+  .results-details:hover {
+    background-color: var(--basic-blue);
+  }
+  .results-details:focus {
+    background-color: var(--basic-dark-blue);
+  }
+  .results-booking {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    background-color: var(--basic-light-brown);
+  }
+  .results-booking:hover {
+    background-color: var(--basic-brown);
+  }
+  .results-booking:focus {
+    background-color: var(--basic-dark-brown);
+  }
+
+
+
+ 
 
 
 
