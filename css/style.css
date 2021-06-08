@@ -13,6 +13,7 @@
     --basic-very-light-grey: #EEEEEE;
     --basic-light-grey: #F2F2F2;
     --basic-dark-grey: #BDBBBC;
+    --special: rgba(#000000, 0.3);
   }
 /* Global */
 
@@ -44,9 +45,12 @@ body {
     color: var(--basic-blue);
   }
   .main-navigation-list a:focus {
-    color: rgba(var(--basic-dark), 0.3);
+    color: var(--special);
   }
   .main-navigation-list a:active {
+    color: var(--basic-light-brown);
+  }
+  .active-link {
     color: var(--basic-light-brown);
   }
   .bg-photo {
@@ -102,7 +106,7 @@ body {
   .search-button1:hover {
     background-color: var(--basic-brown);
   }
-  .search-button1:focus {
+  .search-button1:active {
     background-color: var(--basic-dark-brown);
   }
   .booking-hotel {
@@ -115,7 +119,7 @@ body {
   .date-field input:hover {
     background-color: var(--basic-grey);
   }
-  .date-field input:focus {
+  .date-field input:active {
     background-color: var(--basic-white);
   }
   .quantity-of-persons {
@@ -167,7 +171,7 @@ body {
   .logo-htmlacademy:hover {
    color: var(--basic-light-blue);
   }
-  .logo-htmlacademy:focus {
+  .logo-htmlacademy:active {
     color: var(--basic-dark-grey);
    }
   /*Catalog.html style*/
@@ -208,6 +212,7 @@ body {
   }
   .show-button:hover {
     color: var(--basic-dark);
+    background-color: var(--basic-white);
   }
   /*Pезультаты поиска*/
 
@@ -226,39 +231,34 @@ body {
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
-    color: rgba(var(--basic-dark), 0.3);
-    text-decoration: underline;
-    background-color: transparent;
+    color: var(--special);
     border: none;
+    border-bottom: 1px dashed #81B3D2;
+    background-color: transparent;
   }
   .sort-button:hover {
     color: var(--basic-light-blue);
   }
-  .sort-button:focus {
+  .sort-button:active {
     color: var(--basic-dark);
     text-decoration: none;
   }
-  .sort-button:active {
-    color: var(--basic-light-blue);
-  }
-  .results-list-item {
+  .results-title-link {
     font-size: 21px;
-    font-weight: 700; 
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--basic-dark);
   }
   .results-list-item p {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
   }
-  .results-list-item a {
-    text-decoration: none;
-    color: var(--basic-dark);
-  }
   .results-list-item a:hover {
     color: var(--basic-light-blue);
   }
   .results-list-item a:focus {
-    color: rgba(var(--basic-dark), 0.3);
+    color: var(--special);
   }
   .results-details {
     font-size: 14px;
