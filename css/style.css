@@ -13,7 +13,7 @@
     --basic-very-light-grey: #EEEEEE;
     --basic-light-grey: #F2F2F2;
     --basic-dark-grey: #BDBBBC;
-    --special: rgba(#000000, 0.3);
+    --special: rgba(0, 0, 0, 0.3);
   }
 /* Global */
 
@@ -50,7 +50,7 @@ body {
   .main-navigation-list a:active {
     color: var(--basic-light-brown);
   }
-  .active-link {
+  .main-navigation-list .active-link {
     color: var(--basic-light-brown);
   }
   .bg-photo {
@@ -260,30 +260,32 @@ body {
   .results-list-item a:focus {
     color: var(--special);
   }
-  .results-details {
+  .results-list-item .results-details {
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
     color: var(--basic-white);
     background-color: var(--basic-light-blue);
+    text-decoration: none;
   }
   .results-details:hover {
     background-color: var(--basic-blue);
   }
-  .results-details:focus {
+  .results-details:active {
     background-color: var(--basic-dark-blue);
   }
-  .results-booking {
+  .results-list-item .results-booking {
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
     color: var(--basic-white);
     background-color: var(--basic-light-brown);
+    text-decoration: none;
   }
   .results-booking:hover {
     background-color: var(--basic-brown);
   }
-  .results-booking:focus {
+  .results-booking:active {
     background-color: var(--basic-dark-brown);
   }
   .rate-of-hotels {
