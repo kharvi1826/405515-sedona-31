@@ -268,10 +268,12 @@ body {
     background-color: var(--basic-light-blue);
     text-decoration: none;
   }
-  .results-details:hover {
+  .results-list-item .results-details:hover {
+    color: var(--basic-white);
     background-color: var(--basic-blue);
   }
-  .results-details:active {
+  .results-list-item .results-details:active {
+    color: var(--basic-white);
     background-color: var(--basic-dark-blue);
   }
   .results-list-item .results-booking {
@@ -282,10 +284,12 @@ body {
     background-color: var(--basic-light-brown);
     text-decoration: none;
   }
-  .results-booking:hover {
+  .results-list-item .results-booking:hover {
+    color: var(--basic-white);
     background-color: var(--basic-brown);
   }
-  .results-booking:active {
+  .results-list-item .results-booking:active {
+    color: var(--basic-white);
     background-color: var(--basic-dark-brown);
   }
   .rate-of-hotels {
