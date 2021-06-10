@@ -17,9 +17,10 @@
   }
 /* Global */
 
-body {
-    width: 1200px;
+.page-body {
+    min-width: 1200px;
     margin: 0 auto;
+    padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
@@ -27,10 +28,28 @@ body {
     color: var(--basic-dark);
     text-transform: uppercase;
     background-color: var(--basic-white);
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
   }
   /* Main navigation */
-
+  .main-header {
+    margin-bottom: 56px;
+  }
+  .main-navigation {
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .main-header-logo {
+    justify-self: center;
+  }
   .main-navigation-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
   .main-navigation-list a {
@@ -58,18 +77,30 @@ body {
     background-color: var(--basic-blue);
     min-height: 509px;
     background-repeat: no-repeat;
+    margin-bottom: 56px;
   }
   /*Features*/
 
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
   .features {
+    margin-bottom: 58px;
     text-align: center;
   }
-  .features-list {
-    list-style: none;
+  .features-lead {
+    margin-bottom: 51px;
   }
   .features-intro {
     font-size: 21px;
     font-weight: 700;
+  }
+  .features-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
   .features-item h3 {
     font-size: 21px;
@@ -77,11 +108,28 @@ body {
     font-weight: 700;    
   }
   .features-content {
-      background-color: var(--basic-blue);
-      color: var(--basic-white);
+    min-height: 256px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    margin-bottom: 60px;
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+  }
+  .features-description {
+    justify-self: center;
+  }
+  .features-promo {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    margin-bottom: 82px;
+    justify-self: center;
   }
   .features-item-more {
-      background-color: var(--basic-very-light-grey);
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    margin-bottom: 58px;
+    justify-self: center;
+    background-color: var(--basic-very-light-grey);
   }
   .search-of-hotel h3 {
       font-size: 30px;
@@ -138,15 +186,23 @@ body {
   /*Footer */
 
   .main-footer {
+    margin-top: 23px;
     color: var(--basic-black);
     background-color: var(--basic-white);
     font-size: 21px;
     font-weight: 700;
     text-align: center;
   }
+  .main-footer .container {
+    display: grid;
+    grid-template-columns: 440px 400px 400px;
+    margin: 0;
+  }
   /* Social button */
 
   .social-button-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
   .social-button {
