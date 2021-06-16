@@ -107,6 +107,9 @@
   .features-item:nth-of-type(2) {
     grid-column: 1/-1;
   }
+  .features-item:nth-of-type(2) img {
+   order: -1;
+  }
   .features-item h3 {
     font-size: 21px;
     line-height: 21px;
@@ -114,7 +117,7 @@
   }
   .features-content {
     display: grid;
-    grid-column: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
     min-height: 256px;
     margin-bottom: 60px;
     background-color: var(--basic-blue);
@@ -124,15 +127,17 @@
     justify-self: center;
   }
   .promo-list {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 82px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
   }
-  .features-promo {
-    margin-bottom: 82px;
-    justify-self: center;
-  }
   .features-item-more {
+    padding: 0;
+    padding: 25px 23px;
+    margin: 0;
     margin-bottom: 58px;
     justify-self: center;
     background-color: var(--basic-very-light-grey);
@@ -192,7 +197,6 @@
   /*Footer */
 
   .main-footer {
-    margin-top: 23px;
     color: var(--basic-black);
     background-color: var(--basic-white);
     font-size: 21px;
@@ -200,9 +204,12 @@
     text-align: center;
   }
   .main-footer .container {
+    margin-top: 23px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 0;
+  }
+  .footer-links {
+    text-align: center;
   }
   /* Social button */
 
