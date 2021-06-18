@@ -26,11 +26,9 @@
     </nav>
   </header>
   <main class="container">
-    <h1>Каталог гостиниц города Седона</h1>
     <section class="filter-hotel">
-      <h2>Фильтр гостиниц</h2>
       <form class="form-filter-hotel" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="form-filter-group1">
           <legend>Инфраструктура:</legend>
           <ul class="form-filter-list">
             <li class="form-filter-item">
@@ -47,7 +45,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="form-filter-group2">
           <legend>Тип жилья:</legend>
           <ul class="form-filter-list">
             <li class="form-filter-item">
@@ -64,7 +62,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="form-filter-group3">
           <legend>Стоимость в сутки, ₽:</legend>
           <label for="min-price"></label>
           <input id="min-price" type="number" name="min-price" value="от 0">
@@ -77,7 +75,6 @@
       </form>
     </section>
     <section class="results-of-search">
-      <h2>Результаты поиска гостиниц</h2>
       <p class="found-hotels">Найдено: 3</p>
       <p class="sorted-hotels">Сортировка:</p>
       <ul class="sorted-hotels-list">
@@ -152,36 +149,40 @@
 
   <footer class="main-footer">
     <section class="footer-contacts">
-      <h2>Контакты и социальные сети</h2>
       <img src="img/map.png" width="1199" height="594" alt="Карта штата">
-      <p>#visitSEDONA</p>
-      <p>+7 800 555-86-28</p>
-      <div class="footer-socials">
-        <ul class="social-button-list">
-          <li>
-            <a class="social-button" href="#">Twitter
-              <img src="img/socials/twitter.svg" width="17" height="15" alt="Иконка Twitter">
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Facebook
-              <img src="img/socials/fb.svg" width="12" height="22" alt="Иконка Facebook">
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Youtube
-              <img src="img/socials/youtube.svg" width="20" height="16" alt="Иконка Youtube">
-            </a>
-          </li>
-        </ul>
+      <div class="container">
+        <div class="footer-links">
+          <p>#visitSEDONA</p>
+          <a class="footer-phone" href="+78005558628">+7 800 555-86-28</a>
+        </div>
+        <div class="footer-socials">
+          <ul class="social-button-list">
+            <li>
+              <a class="social-button" href="#">Twitter
+                <img src="img/socials/twitter.svg" width="17" height="15" alt="Иконка Twitter">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">Facebook
+                <img src="img/socials/fb.svg" width="12" height="22" alt="Иконка Facebook">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">Youtube
+                <img src="img/socials/youtube.svg" width="20" height="16" alt="Иконка Youtube">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          Website by
+          <a class="logo-htmlacademy" href="https://htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Надпись HTML Academy">
+          </a>
+        </p>
       </div>
-      <p class="footer-copyright">
-        Website by
-        <a class="logo-htmlacademy" href="https://htmlacademy.ru">
-          <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Надпись HTML Academy">
-        </a>
-      </p>
     </section>
+    </div>
   </footer>
 
 </body>

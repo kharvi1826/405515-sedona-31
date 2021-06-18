@@ -208,6 +208,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  .footer-phone {
+    color: var(--basic-dark);
+    text-decoration: none;
+  }
   .footer-links {
     text-align: center;
   }
@@ -253,6 +257,10 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .form-filter-hotel {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+  }
   .form-filter-list {
     list-style: none;
   }
@@ -265,6 +273,10 @@
     font-size: 14px;
     font-weight: 400;
     background-color: transparent;
+  }
+  .form-filter-group3 {
+    grid-column: 3 / -1;
+    text-align: right;
   }
   .form-filter input[range] {
     width: 316px;
@@ -295,6 +307,11 @@
     font-weight: 400;
     line-height: 18px;
     list-style: none;
+  }
+  .results-hotels-list {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 73px;
   }
   .sort-button {
     font-size: 12px;
