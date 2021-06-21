@@ -13,20 +13,21 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
-      <ul class="main-navigation-list">
-        <li><a href="blank.html">Информация</a></li>
-        <li><a href="blank.html">Фото и видео</a></li>
-        <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
-      </ul>
-      <a class="main-header-logo">
-        <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
-      </a>
-    </nav>
+    <div class="container">
+      <nav class="main-navigation">
+        <ul class="main-navigation-list">
+          <li class="main-nav-item"><a href="blank.html">Информация</a></li>
+          <li class="main-nav-item"><a href="blank.html">Фото и видео</a></li>
+          <li class="main-nav-item"><a href="blank.html">Карта штата</a></li>
+          <li class="main-nav-item"><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+        <a class="main-header-logo">
+          <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
+        </a>
+      </nav>
+      </div>
   </header>
   <main class="container">
-    <h1>Приглашаем в великолепную Седону, потому что Гранд Каньон отстой!</h1>
     <div class="bg-photo">
 
     </div>
@@ -96,21 +97,33 @@
       </ul>
     </section>
     <section class="search-of-hotel">
+      <div class="container">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="button search-button1" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
       <form class="booking-hotel" action="https://echo.htmlacademy.ru" method="POST">
+        <ul class="booking-fields">
+          <li>
         <label for="date-in">Дата заезда:</label>
         <input class="date-field" id="date-in" type="date" name="date-in" value="24 апреля 2017">
+      </li>
+      <li>
         <label for="date-out">Дата выезда:</label>
         <input class="date-field" id="date-out" type="date" name="date-out" value="4 июля 2017">
+      </li>
+      <li>
         <label for="adults">Взрослые:</label>
         <input class="quantity-of-persons" id="adults" type="number" name="adults" value="2">
+      </li>
+      <li>
         <label for="kids">Дети:</label>
         <input class="quantity-of-persons" id="kids" type="number" name="kids" value="0">
+      </li>  
+      </ul>
       </form>
       <button class="button search-button2" type="submit">Найти</button>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -118,8 +131,8 @@
       <img src="img/map.png" width="1199" height="594" alt="Карта штата">
       <div class="container">
         <div class="footer-links">
-        <p>#visitSEDONA</p>
-        <p>+7 800 555-86-28</p>
+          <p>#visitSEDONA</p>
+          <a class="footer-phone" href="+78005558628">+7 800 555-86-28</a>
         </div>
         <div class="footer-socials">
           <ul class="social-button-list">
@@ -140,12 +153,12 @@
             </li>
           </ul>
         </div>
-      <p class="footer-copyright">
-        Website by
-        <a class="logo-htmlacademy" href="https://htmlacademy.ru">
-          <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Надпись HTML Academy">
-        </a>
-      </p>
+        <p class="footer-copyright">
+          Website by
+          <a class="logo-htmlacademy" href="https://htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Надпись HTML Academy">
+          </a>
+        </p>
       </div>
     </section>
     </div>
