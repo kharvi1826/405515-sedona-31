@@ -154,7 +154,6 @@
     list-style: none;
   }
   .features-item-more {
-    padding: 0;
     padding: 25px 23px;
     margin: 0;
     margin-bottom: 58px;
@@ -249,16 +248,15 @@
   /*Footer */
 
   .main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     color: var(--basic-black);
     background-color: var(--basic-white);
     font-size: 21px;
     font-weight: 700;
     padding: 23px 0;
-    z-index: 1;
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   }
   .footer-contacts {
     display: flex;
@@ -294,10 +292,6 @@
     background-color: var(--basic-light-blue);
     color: var(--basic-white);
     text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
   .social-button:hover {
     background-color: var(--basic-blue);
@@ -306,8 +300,6 @@
     background-color: var(--basic-dark-blue);
   }
   .footer-copyright {
-    display: flex;
-    flex-grow: 1;
     margin-left: 10px;
     margin-bottom: 0;
     align-items: flex-end;
