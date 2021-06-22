@@ -25,7 +25,7 @@
           <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
         </a>
       </nav>
-      </div>
+    </div>
   </header>
   <main class="container">
     <div class="bg-photo">
@@ -98,40 +98,39 @@
     </section>
     <section class="search-of-hotel">
       <div class="container">
-      <h2>Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки,<br>
-        и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="button search-button1" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
-      <form class="booking-hotel" action="https://echo.htmlacademy.ru" method="POST">
-        <ul class="booking-fields">
-          <li>
-        <label for="date-in">Дата заезда:</label>
-        <input class="date-field" id="date-in" type="date" name="date-in" value="24 апреля 2017">
-      </li>
-      <li>
-        <label for="date-out">Дата выезда:</label>
-        <input class="date-field" id="date-out" type="date" name="date-out" value="4 июля 2017">
-      </li>
-      <li>
-        <label for="adults">Взрослые:</label>
-        <input class="quantity-of-persons" id="adults" type="number" name="adults" value="2">
-      </li>
-      <li>
-        <label for="kids">Дети:</label>
-        <input class="quantity-of-persons" id="kids" type="number" name="kids" value="0">
-      </li>  
-      </ul>
-      </form>
-      <button class="button search-button2" type="submit">Найти</button>
+        <h3>Заинтересовались?</h3>
+        <p>Укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="button search-button1" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+        <form class="booking-hotel" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="booking-fields-group">
+            <label for="date-in">Дата заезда:</label>
+            <input class="date-field" id="date-in" type="date" name="date-in" value="24 апреля 2017">
+          </div>
+          <div class="booking-fields-group">
+            <label for="date-out">Дата выезда:</label>
+            <input class="date-field" id="date-out" type="date" name="date-out" value="4 июля 2017">
+            </div>
+            <div class="booking-fields-group">
+              <label for="adults">Взрослые:</label>
+              <input class="quantity-of-persons" id="adults" type="number" name="adults" value="2">
+            </div>
+            <div class="booking-fields-group">
+              <label for="kids">Дети:</label>
+              <input class="quantity-of-persons" id="kids" type="number" name="kids" value="0">
+            </div>
+          </div>
+          <button class="button search-button2" type="submit">Найти</button>
+        </form>
+        <img src="img/map.png" width="1199" height="594" alt="Карта штата">
       </div>
     </section>
   </main>
   <footer class="main-footer">
     <section class="footer-contacts">
-      <img src="img/map.png" width="1199" height="594" alt="Карта штата">
       <div class="container">
         <div class="footer-links">
-          <p>#visitSEDONA</p>
+          <a href="#">#visitSEDONA</a>
           <a class="footer-phone" href="+78005558628">+7 800 555-86-28</a>
         </div>
         <div class="footer-socials">
