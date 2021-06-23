@@ -247,23 +247,15 @@
   }
   /*Footer */
 
-  .main-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .main-footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     color: var(--basic-black);
     background-color: var(--basic-white);
     font-size: 21px;
     font-weight: 700;
     padding: 23px 0;
     text-align: center;
-  }
-  .footer-contacts {
-    display: flex;
-    flex-wrap: wrap;
-    width: 210px;
-    padding-left: 136px;
-    margin-bottom: 9px;
   }
   .footer-socials {
    display: flex;
