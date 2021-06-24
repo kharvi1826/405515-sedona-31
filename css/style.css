@@ -257,7 +257,7 @@
     padding: 23px 0;
     text-align: center;
   }
-  .footer-socials {
+  .social-button-list {
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -278,7 +278,7 @@
   }
   .footer-copyright {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
   }
   /* Social button */
