@@ -13,17 +13,19 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
-      <ul class="main-navigation-list">
-        <li><a href="blank.html">Информация</a></li>
-        <li><a href="blank.html">Фото и видео</a></li>
-        <li><a href="blank.html">Карта штата</a></li>
-        <li><a class="active-link" href="#">Гостиницы</a></li>
-      </ul>
-      <a href="#" class="main-header-logo">
-        <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
-      </a>
-    </nav>
+    <div class="container">
+      <nav class="main-navigation">
+        <ul class="main-navigation-list">
+          <li class="main-nav-item"><a href="blank.html">Информация</a></li>
+          <li class="main-nav-item"><a href="blank.html">Фото и видео</a></li>
+          <li class="main-nav-item"><a href="blank.html">Карта штата</a></li>
+          <li class="main-nav-item"><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+        <a class="main-header-logo">
+          <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
+        </a>
+      </nav>
+    </div>
   </header>
   <main class="container">
     <section class="filter-hotel">
@@ -64,12 +66,16 @@
         </fieldset>
         <fieldset class="form-filter-group3">
           <legend>Стоимость в сутки, ₽:</legend>
-          <label for="min-price"></label>
-          <input id="min-price" type="number" name="min-price" value="от 0">
-          <label for="max-price"></label>
-          <input id="max-price" type="number" name="max-price" value="До 3000">
-          <label for="filter-range"></label>
-          <input id="filter-range" type="range" name="filter-range">
+          <div class="filter-price-container">
+            <label for="min-price"></label>
+            <input id="min-price" type="number" name="min-price" placeholder="от 0">
+            <label for="max-price"></label>
+            <input id="max-price" type="number" name="max-price" placeholder="До 3000">
+          </div>
+          <div class="filter-range">
+            <label for="filter-range"></label>
+            <input id="filter-range" type="range" name="filter-range">
+          </div>
           <button class="button show-button" type="submit" name="show-results">Показать</button>
         </fieldset>
       </form>
@@ -101,10 +107,12 @@
           <h3><a class="results-title-link" href="#">Amara Resort & Spa</a></h3>
           <img src="img/catalog/hotel1.jpg" width="135" height="90"
             alt="Гостиница на фоне красных скал с бассейном на переднем плане">
-          <p>Гостиница</p>
-          <p>От 4000 ₽</p>
-          <a class="results-details" href="#">Подробнее</a>
-          <a class="results-booking" href="#">Забронировать</a>
+          <div class="hotel-price">
+            <p>Гостиница</p>
+            <p>От 4000 ₽</p>
+            <a class="results-details" href="#">Подробнее</a>
+            <a class="results-booking" href="#">Забронировать</a>
+          </div>
           <div class="icon-stars">
             <img src="img/icons/star.svg" width="18" height="17" alt="первая звезда">
             <img src="img/icons/star.svg" width="18" height="17" alt="вторая звезда">
@@ -117,10 +125,12 @@
         <li class="results-list-item">
           <h3><a class="results-title-link" href="#">Desert Quail Inn</a></h3>
           <img src="img/catalog/hotel2.jpg" width="135" height="90" alt="Придорожный мотель в стиле вестерн">
-          <p>Мотель</p>
-          <p>От 3000 ₽</p>
-          <a class="results-details" href="#">Подробнее</a>
-          <a class="results-booking" href="#">Забронировать</a>
+          <div class="hotel-price">
+            <p>Мотель</p>
+            <p>От 3000 ₽</p>
+            <a class="results-details" href="#">Подробнее</a>
+            <a class="results-booking" href="#">Забронировать</a>
+          </div>
           <div class="icon-stars">
             <img src="img/icons/star.svg" width="18" height="17" alt="первая звезда">
             <img src="img/icons/star.svg" width="18" height="17" alt="вторая звезда">
@@ -132,10 +142,12 @@
         <li class="results-list-item">
           <h3><a class="results-title-link" href="#">Villas at Poco Diablo</a></h3>
           <img src="img/catalog/hotel3.jpg" width="135" height="90" alt="Одноэтажная вилла в окружении деревьев">
-          <p>Апартаменты</p>
-          <p>От 2000 ₽</p>
-          <a class="results-details" href="#">Подробнее</a>
-          <a class="results-booking" href="#">Забронировать</a>
+          <div class="hotel-price">
+            <p>Апартаменты</p>
+            <p>От 2000 ₽</p>
+            <a class="results-details" href="#">Подробнее</a>
+            <a class="results-booking" href="#">Забронировать</a>
+          </div>
           <div class="icon-stars">
             <img src="img/icons/star.svg" width="18" height="17" alt="первая звезда">
             <img src="img/icons/star.svg" width="18" height="17" alt="вторая звезда">
@@ -149,10 +161,9 @@
 
   <footer class="main-footer">
     <section class="footer-contacts">
-      <img src="img/map.png" width="1199" height="594" alt="Карта штата">
       <div class="container">
         <div class="footer-links">
-          <p>#visitSEDONA</p>
+          <a href="#">#visitSEDONA</a>
           <a class="footer-phone" href="+78005558628">+7 800 555-86-28</a>
         </div>
         <div class="footer-socials">
