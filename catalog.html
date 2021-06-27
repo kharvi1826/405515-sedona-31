@@ -31,7 +31,7 @@
     <section class="filter-hotel">
       <form class="form-filter-hotel" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="form-filter-group1">
-          <legend>Инфраструктура:</legend>
+          <legend class="form-title">Инфраструктура:</legend>
           <ul class="form-filter-list">
             <li class="form-filter-item">
               <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
@@ -48,7 +48,7 @@
           </ul>
         </fieldset>
         <fieldset class="form-filter-group2">
-          <legend>Тип жилья:</legend>
+          <legend class="form-title">Тип жилья:</legend>
           <ul class="form-filter-list">
             <li class="form-filter-item">
               <input type="checkbox" name="hotel" id="filter-hotel" checked>
@@ -65,7 +65,7 @@
           </ul>
         </fieldset>
         <fieldset class="form-filter-group3">
-          <legend>Стоимость в сутки, ₽:</legend>
+          <legend class="form-title">Стоимость в сутки, ₽:</legend>
           <div class="filter-price-container">
             <label for="min-price"></label>
             <input id="min-price" type="number" name="min-price" placeholder="от 0">
@@ -104,15 +104,14 @@
       </div>
       <ul class="results-hotels-list">
         <li class="results-list-item">
+          <div class="hotel hotel-first">
           <h3><a class="results-title-link" href="#">Amara Resort & Spa</a></h3>
           <img src="img/catalog/hotel1.jpg" width="135" height="90"
             alt="Гостиница на фоне красных скал с бассейном на переднем плане">
-          <div class="hotel-price">
-            <p>Гостиница</p>
-            <p>От 4000 ₽</p>
+            <p class="hotel-type">Гостиница</p>
+            <p class="price">От 4000 ₽</p>
             <a class="results-details" href="#">Подробнее</a>
             <a class="results-booking" href="#">Забронировать</a>
-          </div>
           <div class="icon-stars">
             <img src="img/icons/star.svg" width="18" height="17" alt="первая звезда">
             <img src="img/icons/star.svg" width="18" height="17" alt="вторая звезда">
@@ -121,16 +120,16 @@
             <span>4 звёзды</span>
           </div>
           <p class="rate-of-hotels">Рейтинг: 8,5</p>
+          </div>
         </li>
         <li class="results-list-item">
+          <div class="hotel hotel-first">
           <h3><a class="results-title-link" href="#">Desert Quail Inn</a></h3>
           <img src="img/catalog/hotel2.jpg" width="135" height="90" alt="Придорожный мотель в стиле вестерн">
-          <div class="hotel-price">
-            <p>Мотель</p>
-            <p>От 3000 ₽</p>
+            <p class="hotel-type">Мотель</p>
+            <p class="price">От 3000 ₽</p>
             <a class="results-details" href="#">Подробнее</a>
             <a class="results-booking" href="#">Забронировать</a>
-          </div>
           <div class="icon-stars">
             <img src="img/icons/star.svg" width="18" height="17" alt="первая звезда">
             <img src="img/icons/star.svg" width="18" height="17" alt="вторая звезда">
@@ -138,22 +137,23 @@
             <span>3 звезды</span>
           </div>
           <p class="rate-of-hotels">Рейтинг: 8,9</p>
+          </div>
         </li>
         <li class="results-list-item">
+          <div class="hotel hotel-first">
           <h3><a class="results-title-link" href="#">Villas at Poco Diablo</a></h3>
           <img src="img/catalog/hotel3.jpg" width="135" height="90" alt="Одноэтажная вилла в окружении деревьев">
-          <div class="hotel-price">
-            <p>Апартаменты</p>
-            <p>От 2000 ₽</p>
+            <p class="hotel-type">Апартаменты</p>
+            <p class="price">От 2000 ₽</p>
             <a class="results-details" href="#">Подробнее</a>
             <a class="results-booking" href="#">Забронировать</a>
-          </div>
           <div class="icon-stars">
             <img src="img/icons/star.svg" width="18" height="17" alt="первая звезда">
             <img src="img/icons/star.svg" width="18" height="17" alt="вторая звезда">
             <span>2 звезды</span>
           </div>
           <p class="rate-of-hotels">Рейтинг: 9,2</p>
+        </div>
         </li>
       </ul>
     </section>
