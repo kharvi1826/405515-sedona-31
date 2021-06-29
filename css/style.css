@@ -486,16 +486,24 @@
   .sort-button:hover {
     color: var(--basic-light-blue);
   }
-  .sort-button:active {
+  .sort-button .sort-button:active {
     color: var(--basic-dark);
-    text-decoration: none;
+    border-color: transparent;
+  }
+  .sort-button-active {
+    color: var(--basic-light-blue);
+    border-color: transparent;
   }
   .results-hotels-list {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 0 73px;
+    list-style: none;
+    padding: 0px;
   }
-  .results-title-link {
+  .hotel-title {
+    grid-column: 2/5;
+    margin: 0 0 3px;
+    padding: 20px;
+  }
+  .hotel-title-link {
     font-size: 21px;
     font-weight: 700;
     color: var(--basic-dark);
@@ -508,40 +516,22 @@
     text-align: left;
     vertical-align: top;
   }
-  .results-list-item {
-    display: flex;
-    padding: 30px 71px 25px 73px;
-    border-bottom: 1px solid var(--basic-grey);
-  }
   .hotel {
    position: relative;
-   height: 91px;
    padding: 30px 0px;
    margin: 0px;
    border-bottom: 1px var(--basic-dark-grey);
    display: grid;
-   grid-template-columns: 164px 116px 142px 522px 110px;
-   grid-template-rows: 20px 43px 27px;
-  }
-  .hotel-first {
-    grid-row: 1/2;
-  }
-  .hotel-second {
-    grid-row: 2/3;
-  }
-  .hotel-third {
-    grid-row: 3/4;
+   grid-gap: 6px;
+   grid-template-rows: max-content 43px 27px;
+   display: flex;
+   padding: 30px 71px 25px 73px;
+   border-bottom: 1px solid var(--basic-grey);
   }
   .hotel img {
    grid-column: 1/2;
-   grid-row: 1/4;
+   grid-row: 1/-1;
    margin: 0px;
-  }
-  .results-list-item p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    margin: 0;
   }
   .hotel-type {
    grid-row: 2/3;
@@ -552,8 +542,12 @@
    text-align: left;
    height: 21px;
    width: 96px;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 21px;
+   margin: 0;
   }
-  .hotel .price {
+  .hotel .hotel-price {
    grid-row: 2/3;
    grid-column: 3/4;
    width: 110px;
@@ -562,13 +556,13 @@
    padding: 0;
    text-align: left;
   }
-  .results-list-item a:hover {
+  .hotel a:hover {
     color: var(--basic-light-blue);
   }
-  .results-list-item a:focus {
+  .hotel a:focus {
     color: var(--special);
   }
-  .results-list-item .results-details {
+  .hotel .hotel-details {
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -583,15 +577,15 @@
     justify-content: center;
     align-items: center;
   }
-  .results-list-item .results-details:hover {
+  .hotel .hotel-details:hover {
     color: var(--basic-white);
     background-color: var(--basic-blue);
   }
-  .results-list-item .results-details:active {
+  .hotel .hotel-details:active {
     color: var(--basic-white);
     background-color: var(--basic-dark-blue);
   }
-  .results-list-item .results-booking {
+  .hotel .hotel-booking {
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -606,15 +600,15 @@
     justify-content: center;
     align-items: center;
   }
-  .results-list-item .results-booking:hover {
+  .hotel .hotel-booking:hover {
     color: var(--basic-white);
     background-color: var(--basic-brown);
   }
-  .results-list-item .results-booking:active {
+  .hotel .hotel-booking:active {
     color: var(--basic-white);
     background-color: var(--basic-dark-brown);
   }
-  .rate-of-hotels {
+  .hotels-rate {
     color: #666666;
     background-color: var(--basic-light-grey);
     grid-column: -2/-1;
