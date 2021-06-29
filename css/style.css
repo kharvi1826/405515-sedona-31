@@ -335,6 +335,7 @@
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    width: 1200px;
+   padding: 26px 0px 0px 0px;
   }
   .form-filter-hotel fieldset {
     border: none;
@@ -345,25 +346,17 @@
    margin: 0px;
    padding: 24px 0px 32px 73px;
    border: 0px;
-   display: flex;
-   flex-wrap: wrap;
   }
   .form-filter-list {
    margin: 0px;
    padding: 0px;
    list-style: none;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: flex-start;
   }
   .form-filter-group2 {
    grid-column: 2/3;
-   margin: 0px 0px 0px 119px;
+   margin: 0;
    padding: 24px 0px 32px;
    border: 0px;
-   display: flex;
    flex-wrap: wrap;
   }
   .form-filter-group3 {
@@ -381,7 +374,6 @@
   }
   .form-title {
    margin: 0px;
-   padding: 26px 0px 0px 0px;
    text-align: start;
   }
   .form-filter-item {
@@ -389,6 +381,7 @@
     font-weight: 700;
     line-height: 21px;
     margin-bottom: 25px;
+    display: flex;
   }
   .form-filter-item label {
    position: relative;
@@ -550,6 +543,9 @@
    margin: 0;
    padding: 0;
    text-align: left;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 21px;
   }
   .hotel a:hover {
     color: var(--basic-light-blue);
@@ -619,6 +615,9 @@
     grid-row: 1/2;
     display: flex;
     justify-content: flex-end;
+  }
+  .icon-stars img {
+    margin: 0;
   }
 
 
