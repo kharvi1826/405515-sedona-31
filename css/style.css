@@ -366,9 +366,6 @@
    display: flex;
    flex-wrap: wrap;
   }
-  .form-filter-list .form-filter-group2 {
-   width: 125px;
-  }
   .form-filter-group3 {
     grid-column: 3/-1;
     text-align: right;
@@ -408,13 +405,16 @@
     height: 2px;
   }
   .filter-price-container {
+    width: 313px;
+    height: 32px;
+    margin: 10px 5px 0px 0px;
+    border: 2px solid var(--basic-white);
+    border-radius: 2px;
+    color: var(--basic-white);
+    background-color: transparent;
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    width: 317px;
-    height: 36px;
-    align-items: center;
-    margin-top: 10px;
+    flex-wrap: nowrap;
+    vertical-align: middle;
   }
   .filter-range {
     position: relative;
@@ -437,7 +437,7 @@
     background-color: var(--basic-white);
   }
   /*Pезультаты поиска*/
-  .results-of-search {
+  .sorting {
    position: relative;
    height: 86px;
    padding: 0px 73px;
