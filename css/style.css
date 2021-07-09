@@ -141,14 +141,16 @@
     text-align: center;
   }
   .features-lead {
-    margin-top: 0px;
-    padding: 42px 21px;
+    padding: 42px 21px 53px;
     font-size: 14px;
   }
-  .features-intro {
+  .features-lead p {
+    margin: 0px;
+  }
+  .features-lead p.features-intro {
     font-size: 21px;
     font-weight: 700;
-    margin: 0 0 20px;
+    margin: 0 0 43px;
   }
   .features-list {
     display: grid;
@@ -175,18 +177,73 @@
     min-height: 256px;
     background-color: var(--basic-blue);
     color: var(--basic-white);
-    margin-top: 31px;
   }
   .features-description {
     justify-self: center;
   }
   .promo-list {
     padding: 0;
-    margin: 0;
-    padding-top: 34px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 62px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
+  }
+  .promo-item {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .promo-title {
+    display: block;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .house {
+    position: relative;
+  }
+  .house::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    width: 75px;
+    height: 72px;
+    background-image: url("../img/icon-1.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  .food {
+    position: relative;
+  }
+  .food::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    width: 75px;
+    height: 70px;
+    background-image: url("../img/icon-2.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+  .souvenirs {
+    position: relative;
+  }
+  .souvenirs::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    width: 64px;
+    height: 77px;
+    background-image: url("../img/icon-3.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
   .features-item-more {
     padding: 0px 23px;
