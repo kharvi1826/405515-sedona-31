@@ -169,7 +169,9 @@
   .features-item h3 {
     font-size: 21px;
     line-height: 21px;
-    font-weight: 700;    
+    font-weight: 700;
+    margin: 0;
+    padding: 0;    
   }
   .features-content {
     display: grid;
@@ -179,12 +181,20 @@
     color: var(--basic-white);
   }
   .features-description {
+    margin: 0 auto;
+    padding-top: 47px;
     justify-self: center;
+  }
+  .features-description p {
+    padding-top: 10px;
+  }
+  .features-description .description {
+    padding-top: 5px;
   }
   .promo-list {
     padding: 0;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 110px;
     padding-bottom: 62px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -195,12 +205,12 @@
     margin: 0 auto;
     padding: 0 40px;
   }
-  .promo-title {
-    display: block;
+  .promo-list .promo-title {
     font-size: 21px;
     font-weight: 700;
     margin: 0 auto;
     margin-bottom: 25px;
+    padding-top: 50px;
   }
   .house {
     position: relative;
@@ -208,11 +218,11 @@
   .house::before {
     content: "";
     position: absolute;
-    top: -100px;
-    left: 50%;
+    top: -50px;
+    left: 38%;
     width: 75px;
     height: 72px;
-    background-image: url("../img/icon-1.svg");
+    background-image: url("../img/icons/icon-1.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -222,14 +232,13 @@
   .food::before {
     content: "";
     position: absolute;
-    top: -100px;
-    left: 50%;
+    top: -50px;
+    left: 38%;
     width: 75px;
     height: 70px;
-    background-image: url("../img/icon-2.svg");
+    background-image: url("../img/icons/icon-3.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-size: contain;
   }
   .souvenirs {
     position: relative;
@@ -237,19 +246,25 @@
   .souvenirs::before {
     content: "";
     position: absolute;
-    top: -100px;
-    left: 50%;
+    top: -50px;
+    left: 40%;
     width: 64px;
     height: 77px;
-    background-image: url("../img/icon-3.svg");
+    background-image: url("../img/icons/icon-2.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
   .features-item-more {
-    padding: 0px 23px;
+    padding: 46px 47px;
     margin: 0;
     justify-self: center;
     background-color: var(--basic-very-light-grey);
+  }
+  .features-item-number {
+    padding-top: 10px;
+  }
+  .features-item-opinion {
+    padding-bottom: 16px;
   }
   .search-of-hotel {
     display: grid;
@@ -264,6 +279,10 @@
     text-align: center;
     margin: 0 auto;
     margin-bottom: 4px;
+    padding-top: 30px;
+  }
+  .search-request {
+    padding: 30px 82px;
   }
   .search-of-hotel p {
     margin: 0 auto;
