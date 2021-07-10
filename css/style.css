@@ -530,19 +530,63 @@
   }
   .form-filter-hotel fieldset {
     border: none;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
   }
-  .form-filter-group1 {
-   grid-column: 1/2;
-   margin: 0px;
-   padding: 24px 0px 32px 73px;
-   border: 0px;
+  .form-filter-hotel legend {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    margin-bottom: 24px;
   }
   .form-filter-list {
    margin: 0px;
    padding: 0px;
    list-style: none;
   }
+  .form-filter-item {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 25px;
+    display: flex;
+  }
+  .form-filter-item label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding-left: 41px;
+  }
+  .filter-input-checkbox:hover + label,
+  .filter-input-checkbox:focus + label {
+    color: var(--basic-white);
+ }
+ .filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/catalog/checkbox-off.svg");
+    background-repeat: no-repeat;
+ }
+ .filter-input-checkbox:checked + label::before {
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/catalog/checkbox-on.svg");
+    background-repeat: no-repeat; 
+ }
+ .filter-input-checkbox:disabled + label::before {
+    cursor: default;
+    opacity: 0.5;
+ }
+  .form-filter-group1 {
+    grid-column: 1/2;
+    margin: 0px;
+    padding: 24px 0px 32px 73px;
+    border: 0px;
+   }
   .form-filter-group2 {
    grid-column: 2/3;
    margin: 0;
@@ -566,23 +610,6 @@
   .form-title {
    margin: 0px;
    text-align: start;
-  }
-  .form-filter-item {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 21px;
-    margin-bottom: 25px;
-    display: flex;
-  }
-  .form-filter-item label {
-   position: relative;
-   display: block;
-  }
-  .form-filter-item input[checkbox] {
-    font-size: 14px;
-    font-weight: 400;
-    background-color: transparent;
-    display: none;
   }
   .form-filter input[range] {
     width: 316px;
