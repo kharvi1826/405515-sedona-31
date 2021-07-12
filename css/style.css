@@ -667,7 +667,7 @@
   .filter-price-container input {
     height: 34px;
     margin: 0;
-    padding: 0 5px;
+    padding: 0px 100px 0px 1px;
     color: var(--basic-white);
     background-color: transparent;
     list-style: none;
@@ -705,11 +705,11 @@
     box-shadow: 0 2px 1px 0 rgba(171, 171, 171, 0.3);
     cursor: pointer;
   }
-  .range-controls .toggle-min {
-    left: 265px;
-  }
   .range-controls .toggle-max {
-    right: 100px;
+    left: 254px;
+  }
+  .range-controls .toggle-min {
+    right: 96px;
   }
   .range-controls .toggle:hover {
     width: 5px;
@@ -738,26 +738,25 @@
   }
   .sorting {
    position: relative;
-   height: 86px;
    padding: 0px 73px;
    background-color: var(--basic-white);
    display: flex;
    justify-content: flex-start;
    align-items: baseline;
    border-bottom: 1px solid var(--basic-grey);
+   padding-right: 46px;
+   padding-top: 10px;
   }
   .found-hotels {
     font-size: 21px;
     font-weight: 700;
     order: -1;
-    margin-right: 46px;
-    padding-top: 10px;
   }
   .sorted-hotels {
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
-    padding-right: 20px;
+    ;
   }
   .sorted-hotels-list,
   .results-hotels-list {
