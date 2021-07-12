@@ -666,8 +666,8 @@
   }
   .filter-price-container input {
     height: 34px;
-    margin: 0;
-    padding: 0px 100px 0px 1px;
+    margin: 0px;
+    padding: 0px;
     color: var(--basic-white);
     background-color: transparent;
     list-style: none;
@@ -675,7 +675,10 @@
     text-align: center;
     text-transform: uppercase;
     box-sizing: border-box;
-  }   
+  }
+   #max-price {
+    padding-right: 120px;
+  } 
   .range-controls {
     position: relative;
     height: 33px;
