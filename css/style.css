@@ -741,14 +741,12 @@
   }
   .sorting {
    position: relative;
-   padding: 0px 73px;
+   padding: 8px 46px 0px 73px;
    background-color: var(--basic-white);
    display: flex;
    justify-content: flex-start;
    align-items: baseline;
    border-bottom: 1px solid var(--basic-grey);
-   padding-right: 46px;
-   padding-top: 10px;
   }
   .found-hotels {
     font-size: 21px;
@@ -759,7 +757,7 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
-    ;
+    padding-left: 45px;
   }
   .sorted-hotels-list,
   .results-hotels-list {
@@ -948,6 +946,9 @@
     background-color: var(--basic-dark-brown);
   }
   .hotels-rate {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
     color: #666666;
     background-color: var(--basic-light-grey);
     grid-column: -2/-1;
