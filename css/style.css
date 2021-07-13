@@ -345,7 +345,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    padding: 0px 0px 0px 13px;
+    padding: 55px 55px 0px 0px;
   }
   .booking-fields-group {
     display: flex;
@@ -444,7 +444,7 @@
   border: none;
 }
   .search-button2 {
-    display: inline-block;
+    grid-column: 1/-1;
     width: 458px;
     font-size: 21px;
     line-height: 27px;
