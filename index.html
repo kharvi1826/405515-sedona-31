@@ -106,8 +106,8 @@
       <section class="booking">
         <form class="booking-hotel" action="https://echo.htmlacademy.ru" method="POST">
           <div class="booking-fields-group check-in-date">
-            <label for="date-in">Дата заезда:</label>
-            <input class="date-field" id="date-in" type="date" name="date-in" placeholder="24 апреля 2017">
+            <label class="booking-date" for="date-in">Дата заезда:</label>
+            <input class="date-field" id="date-in" type="text" name="date-in" value="24 апреля 2017">
             <button class="calendar" type="button">
               <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -120,8 +120,8 @@
             </button>
           </div>
           <div class="booking-fields-group check-out-date">
-            <label for="date-out">Дата выезда:</label>
-            <input class="date-field" id="date-out" type="date" name="date-out" placeholder="4 июля 2017">
+            <label class="booking-date" for="date-out">Дата выезда:</label>
+            <input class="date-field" id="date-out" type="text" name="date-out" value="4 июля 2017">
             <button class="calendar" type="button">
               <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -134,29 +134,27 @@
             </button>
           </div>
           <div class="booking-fields-group">
-            <label for="adults">Взрослые:</label>
-            <button class="minus-button minus-adults" type="button">
+            <label class="booking-date" for="adults">Взрослые:</label>
+            <button class="button-min minus-adults" type="button">
               <svg width="12" height="3" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#A9A9A9" d="M0 0h12v3H0z" />
               </svg>
             </button>
             <input class="quantity-of-persons" id="adults" type="number" name="adults" value="2">
-            <button class="plus-button plus-adults" type="button">
+            <button class="button-plus plus-adults" type="button">
               <svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z" fill="#A9A9A9" />
               </svg>
             </button>
-          </div>
-          <div class="booking-fields-group">
-            <label for="kids">Дети:</label>
-            <button class="minus-button minus-kids" type="button">
+            <label class="booking-date" for="kids">Дети:</label>
+            <button class="button-min minus-kids" type="button">
               <svg width="12" height="3" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#A9A9A9" d="M0 0h12v3H0z" />
               </svg>
             </button>
             <input class="quantity-of-persons" id="kids" type="number" name="kids" value="0">
-            <button class="plus-button plus-kids" type="button">
+            <button class="button-plus plus-kids" type="button">
               <svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z" fill="#A9A9A9" />
@@ -165,7 +163,6 @@
           </div>
           <button class="button search-button2" type="submit">Найти</button>
         </form>
-
       </section>
       <img src="img/map.png" width="1199" height="594" alt="Карта штата">
     </main>
