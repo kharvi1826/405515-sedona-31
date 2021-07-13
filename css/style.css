@@ -343,9 +343,9 @@
   }
   .booking-hotel {
     display: grid;
-    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    padding-top: 55px;
+    padding: 0px 0px 0px 13px;
   }
   .booking-fields-group {
     display: flex;
@@ -357,8 +357,8 @@
   }
   .check-out-date,
   .check-in-date {
+    grid-column: 1/-1;
     margin-bottom: 30px;
-    width: 458px;
   }
   .booking-date {
     font-size: 14px;
@@ -394,8 +394,12 @@
     background-color: transparent;
     border: none;
   }
-  .quantity-booking {
-    padding: 0px 55px;
+  .booking-quantity {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
   .quantity-of-persons {
     width: 114px;
