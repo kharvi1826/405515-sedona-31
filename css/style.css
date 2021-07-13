@@ -334,6 +334,8 @@
     line-height: 26px;
     font-weight: 700;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0 auto;
     margin-bottom:-395px;
     color: var(--basic-black);
@@ -345,7 +347,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    padding: 55px 55px 0px 0px;
+    padding: 55px;
   }
   .booking-fields-group {
     display: flex;
@@ -372,7 +374,7 @@
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
-    width: 364px;
+    flex-grow: 1;
     height: 38px;
     background-color: var(--basic-light-grey);
     border: none;
@@ -399,7 +401,6 @@
     margin: 0px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
   }
   .quantity-of-persons {
     width: 114px;
