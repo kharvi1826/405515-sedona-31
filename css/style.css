@@ -353,13 +353,13 @@
   .booking-hotel {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 54px;
     margin: 0 auto;
     padding: 55px;
   }
   .booking-fields-group {
     display: flex;
-    justify-content: space-between;
-    min-width: 0;    
+    justify-content: flex-start;  
     height: 38px;
     margin: 0;
     position: relative;
@@ -370,12 +370,18 @@
     grid-column: 1/-1;
   }
   .booking-date {
+    box-sizing: border-box;
+    width: 114px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
     width: 121px;
     align-self: center;
     padding-right: 11px;
+    flex-shrink: 0;
+  }
+  .booking-date .kids {
+   width: 65px;
   }
   .date-field {
     font-size: 14px;
@@ -385,6 +391,8 @@
     flex-grow: 1;
     height: 38px;
     background-color: var(--basic-light-grey);
+    text-transform: uppercase;
+    padding: 0px 12px;
     border: none;
     opacity: 1;
   }
@@ -429,6 +437,8 @@
     padding: 0px;
     margin: 0px;
     background-color: var(--basic-light-grey);
+    justify-content: center;
+    align-items: center;
   }
   .calendar:hover path,
   .button-min:hover path,
