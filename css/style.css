@@ -375,12 +375,11 @@
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
-    width: 121px;
     align-self: center;
     padding-right: 11px;
     flex-shrink: 0;
   }
-  .booking-date .kids {
+  .booking-date.kids {
    width: 65px;
   }
   .date-field {
