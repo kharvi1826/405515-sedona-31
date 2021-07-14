@@ -312,6 +312,7 @@
     cursor: pointer;
   }
   .search-button1 {
+    font: inherit;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -322,6 +323,7 @@
     justify-self: center;
     margin: 0;
     padding: 0;
+    padding-top: 5px;
     position: relative;
     cursor: pointer;
   }
@@ -351,7 +353,6 @@
   .booking-hotel {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 50px;
     margin: 0 auto;
     padding: 55px;
   }
@@ -380,11 +381,11 @@
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
+    width: 346px;
     flex-grow: 1;
     height: 38px;
     background-color: var(--basic-light-grey);
     border: none;
-    padding-left: 4px;
     opacity: 1;
   }
   .date-field input:hover {
