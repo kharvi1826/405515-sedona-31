@@ -280,6 +280,11 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+  /*Modal window*/
+
+  .popup-close {
+    display: none;
+  }
   .search-of-hotel {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
