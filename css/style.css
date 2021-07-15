@@ -282,9 +282,6 @@
   }
   /*Modal window*/
 
-  .popup-close {
-    display: none;
-  }
   .search-of-hotel {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
@@ -338,6 +335,9 @@
   .search-button1 .search-button-text:active {
     background-color: var(--basic-dark-brown);
     opacity: 30%;
+  }
+  .booking .popup-close {
+    display: none;
   }
   .booking {
     display: block;
