@@ -486,13 +486,18 @@
     object-fit: cover; 
     object-position: center;
   }
+  .map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center;
+  }
   /*Footer */
 
   .main-footer .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     color: var(--basic-black);
-    background-color: var(--basic-white);
     font-size: 21px;
     font-weight: 700;
     padding: 12px 0;
@@ -506,6 +511,7 @@
     display: flex;
     flex-direction: column;
     padding: 0px 0px 12px 73px;
+    align-items: center;
   }
   .footer-links a,
   .footer-links:hover,
