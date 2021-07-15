@@ -330,7 +330,7 @@
   .search-button1:hover {
     background-color: var(--basic-brown);
   }
-  .search-button1:active {
+  .search-button1 .search-button-text:active {
     background-color: var(--basic-dark-brown);
     opacity: 30%;
   }
@@ -504,7 +504,7 @@
     text-align: center;
   }
   .main-footer {
-    background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
     padding-top: 12px;
   }
   .footer-links {

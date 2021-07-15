@@ -1,7 +1,7 @@
-const searchButton = document.querySelector("search-button2");
-let  popup = document.querySelector("booking");
-const form = document.querySelector("booking-hotel");
-const data = form.querySelector("date-field");
+const searchButton = document.querySelector(".search-button2");
+let  popup = document.querySelector(".booking");
+const form = document.querySelector(".booking-hotel");
+const data = form.querySelector(".date-field");
 
 popup.classList.add("popup-close");
 
