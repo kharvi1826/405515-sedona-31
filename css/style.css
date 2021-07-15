@@ -336,7 +336,7 @@
     background-color: var(--basic-dark-brown);
     opacity: 30%;
   }
-  .booking .popup-close {
+  .booking.popup-close {
     display: none;
   }
   .booking {
