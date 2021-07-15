@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
 </head>
 
@@ -28,7 +29,9 @@
       </div>
     </header>
     <main class="container">
+      <h1 class="visually-hidden">Каталог гостиниц</h1>
       <section class="filter-hotel">
+        <h2 class="visually-hidden">Критерии поиска</h2>
         <form class="form-filter-hotel" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="form-filter-group1">
             <legend class="form-title">Инфраструктура:</legend>
@@ -81,8 +84,10 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min" aria-label="Минимальная стоимость"></div>
-                <div class="toggle toggle-max" aria-label="Максимальная стоимость"></div>
+                <div class="toggle toggle-min" aria-label="Минимальная стоимость"><span
+                    class="visually-hidden">Уменьшить цену</span></div>
+                <div class="toggle toggle-max" aria-label="Максимальная стоимость"><span
+                    class="visually-hidden">Увеличить цену</span></div>
               </div>
             </div>
             <button class="button show-button" type="submit" name="show-results">Показать</button>
@@ -90,6 +95,7 @@
         </form>
       </section>
       <section class="results-of-search">
+        <h2 class="visually-hidden">Результаты поиска</h2>
         <div class="sorting">
           <p class="found-hotels">Найдено: 3</p>
           <p class="sorted-hotels">Сортировка:</p>
@@ -165,37 +171,39 @@
     </main>
 
     <footer class="main-footer">
-        <div class="container">
-          <div class="footer-links">
-            <a href="#">#visitSEDONA</a>
-            <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-          </div>
-          <div class="footer-socials">
-            <ul class="social-button-list">
-              <li>
-                <a class="social-button" href="#"><span class="visually-hidden">Twitter</span>
-                  <img src="img/socials/twitter.svg" width="17" height="15" alt="Иконка Twitter">
-                </a>
-              </li>
-              <li>
-                <a class="social-button" href="#"><span class="visually-hidden">Facebook</span>
-                  <img src="img/socials/fb.svg" width="12" height="22" alt="Иконка Facebook">
-                </a>
-              </li>
-              <li>
-                <a class="social-button" href="#"><span class="visually-hidden">Youtube</span>
-                  <img src="img/socials/youtube.svg" width="20" height="16" alt="Иконка Youtube">
-                </a>
-              </li>
-            </ul>
-          </div>
-          <p class="footer-copyright">
-            Website by
-            <a class="logo-htmlacademy" href="https://htmlacademy.ru">
-              <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Надпись HTML Academy">
-            </a>
-          </p>
+      <div class="container">
+        <h2 class="visually-hidden">Контакты и социальные сети</h2>
+        <div class="footer-links">
+          <a href="#">#visitSEDONA</a>
+          <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
         </div>
+        <div class="footer-socials">
+          <ul class="social-button-list">
+            <li>
+              <a class="social-button" href="#"><span class="visually-hidden">Twitter</span>
+                <img src="img/socials/twitter.svg" width="17" height="15" alt="Иконка Twitter">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#"><span class="visually-hidden">Facebook</span>
+                <img src="img/socials/fb.svg" width="12" height="22" alt="Иконка Facebook">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#"><span class="visually-hidden">Youtube</span>
+                <img src="img/socials/youtube.svg" width="20" height="16" alt="Иконка Youtube">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          Website by
+          <a class="logo-htmlacademy" href="https://htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Надпись HTML Academy">
+            <span class="visually-hidden">Ссылка на сайт HTML Academy</span>
+          </a>
+        </p>
+      </div>
   </div>
   </footer>
   </div>
