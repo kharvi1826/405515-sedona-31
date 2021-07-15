@@ -502,7 +502,7 @@
   .main-footer .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    color: var(--basic-black);
+    color: var(--basic-dark);
     font-size: 21px;
     font-weight: 700;
     padding: 12px 0;
@@ -611,7 +611,6 @@
    margin: 0 auto;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   width: 1200px;
    padding: 26px 0px 0px 0px;
    border: none;
   }
@@ -758,7 +757,7 @@
     height: 4px;
     padding: 0;
     border: 8px solid var(--basic-white);
-    background-color: var(--basic-dark-gray);
+    background-color: var(--basic-dark-grey);
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(171, 171, 171, 0.3);
     cursor: pointer;
@@ -1038,7 +1037,7 @@
     display: block;
     width: 18px;
   }
-  }
+  
 
 
 
