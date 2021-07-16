@@ -14,8 +14,14 @@
     --basic-light-grey: #F2F2F2;
     --basic-dark-grey: #BDBBBC;
     --basic-very-dark-grey: #A9A9A9;
+    --arrow-grey: #cacaca;
+    --rate-grey: #666666;
     --special: rgba(0, 0, 0, 0.3);
     --basic-white-30: rgba(255, 255, 255, 0.3);
+    --basic-white-90: rgba(255, 255, 255, 0.9);
+    --shadow-color: rgba(0,1,1,0.2);
+    --shadow-color-dark: rgba(0, 1, 1, 0.15); 
+    --toggle-shadow-color: rgba(171, 171, 171, 0.3);
   }
 /* Global */
 .page {
@@ -41,7 +47,7 @@
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: flex-start;
-    box-shadow: 0 5px 15px rgba(0,1,1,0.2);
+    box-shadow: 0 5px 15px var(--shadow-color);
   }
   .main {
     width: 100%;
@@ -368,7 +374,7 @@
     padding: 0px;
     color: var(--basic-dark);
     background-color: var(--basic-white);
-    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15); 
+    box-shadow: 0px 7px 15px var(--shadow-color-dark); 
     right: 475px;
   }
   .booking-hotel {
@@ -470,8 +476,8 @@
     color: var(--basic-dark);
   }
   .calendar:active,
-  .minus-button:active,
-  .plus-button:active {
+  .button-min:active,
+  .button-plus:active {
     color: var(--basic-light-blue);
   }
   .minus-adults, 
@@ -531,7 +537,7 @@
     font-weight: 700;
     padding: 24px 0 12px;
     text-align: center;
-    background-color: var(--basic-white);
+    background-color: var(--basic-white-90);
     align-items: flex-start;
   }
   .footer-links {
@@ -775,7 +781,7 @@
   }
   .range-controls .scale {
     height: 2px;
-    background: rgba(255, 255, 255, 0.3);
+    background: var(--basic-white-30);
   }
   .range-controls .bar {
     width: 317px;
@@ -792,7 +798,7 @@
     border: 8px solid var(--basic-white);
     background-color: var(--basic-dark-grey);
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(171, 171, 171, 0.3);
+    box-shadow: 0 2px 1px 0 var(--toggle-shadow-color);
     cursor: pointer;
   }
   .range-controls .toggle-max {
@@ -875,7 +881,7 @@
     font-family: inherit;
     color: var(--special);
     border: none;
-    border-bottom: 2px dotted var(--basic-light-blue);
+    border-bottom: 1px dotted var(--basic-light-blue);
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -890,7 +896,7 @@
   }
   .sort-button:active {
     color: var(--basic-dark);
-    border: 1px dotted transparent;
+    border-bottom: 1px dotted transparent;
   }
   .sort-button .sort-button:active {
     color: var(--basic-dark);
@@ -914,19 +920,16 @@
     height: 0;
     border-style: solid;
     border-width: 0 5.5px 10px 5.5px;
-    border-color: transparent transparent #cacaca transparent;
+    border-color: transparent transparent var(--arrow-grey) transparent;
   }
-  .sort-button-arrow1:not(.active):active::before, .sort-button-arrow1.active::before {
+  .sort-button-arrow1.active::before {
     border-color: transparent transparent var(--basic-light-blue) transparent;
   }
   .sort-button-arrow1:not(.active):hover::before {
     border-color: transparent transparent var(--basic-dark) transparent;
   }
-  .sort-button-arrow2:not(.active):active::before, .sort-button-arrow2.active::before {
-    border-color: var(--basic-light-blue) transparent transparent transparent;
-  }
-  .sort-button-arrow2:not(.active):hover::before {
-    border-color: var(--basic-light-blue) transparent transparent transparent;
+  .sort-button-arrow1:not(.active):active::before {
+    border-color: transparent transparent var(--basic-light-blue) transparent;
   }
   .sort-button-arrow2::before {
     content: "";
@@ -935,7 +938,16 @@
     height: 0;
     border-style: solid;
     border-width: 10px 5.5px 0 5.5px;
-    border-color: #cacaca transparent transparent transparent;
+    border-color: var(--arrow-grey) transparent transparent transparent;
+  }
+  .sort-button-arrow2.active::before {
+    border-color: var(--basic-light-blue) transparent transparent transparent;
+  }
+  .sort-button-arrow2:not(.active):hover::before {
+    border-color: var(--basic-light-blue) transparent transparent transparent;
+  }
+  .sort-button-arrow2:not(.active):active::before {
+    border-color: var(--basic-light-blue) transparent transparent transparent;
   }
    .sort-button-arrow1 {
     padding-right: 16px;
@@ -1008,10 +1020,10 @@
    line-height: 21px;
    margin: 0 0 9px;
   }
-  .hotel a:hover {
+  .hotel .hotel-title-link:hover {
     color: var(--basic-light-blue);
   }
-  .hotel a:focus {
+  .hotel .hotel-title-link:focus {
     color: var(--special);
   }
   .hotel .hotel-details {
@@ -1030,7 +1042,7 @@
     align-items: center;
   }
   .hotel .hotel-details:hover {
-    color: var(--basic-white-30);
+    color: var(--basic-white);
     background-color: var(--basic-blue);
   }
   .hotel .hotel-details:active {
@@ -1053,7 +1065,7 @@
     align-items: center;
   }
   .hotel .hotel-booking:hover {
-    color: var(--basic-white-30);
+    color: var(--basic-white);
     background-color: var(--basic-brown);
   }
   .hotel .hotel-booking:active {
@@ -1064,7 +1076,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    color: #666666;
+    color: var(--rate-grey);
     background-color: var(--basic-light-grey);
     grid-column: -2/-1;
     grid-row: -2/-1;
