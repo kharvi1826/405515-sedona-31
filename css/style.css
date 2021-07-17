@@ -513,8 +513,9 @@
   }
   .map {
     height: 594px;
-    object-fit: cover; 
-    object-position: center;
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .map-img {
     width: 100%;
