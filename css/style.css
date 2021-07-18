@@ -53,6 +53,7 @@
     width: 100%;
     grid-row: 2/-1;
     grid-column: 1/-1;
+    position: relative;
   }
   .visually-hidden {
     position: absolute;
@@ -377,7 +378,7 @@
     box-shadow: 0px 7px 15px var(--shadow-color-dark); 
     right: 475px;
   }
-  .booking-hotel {
+  .booking-hotel {-
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 54px;
@@ -423,10 +424,10 @@
     border: none;
     opacity: 1;
   }
-  .date-field input:hover {
+  .date-field:hover {
     background-color: var(--basic-grey);
   }
-  .date-field input:active {
+  .date-field:focus {
     background-color: var(--basic-white);
     outline: 2px solid var(--basic-grey);
   }
