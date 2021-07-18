@@ -428,6 +428,7 @@
   }
   .date-field input:active {
     background-color: var(--basic-white);
+    outline: 2px solid var(--basic-grey);
   }
   .calendar {
     color: var(--basic-very-dark-grey);
